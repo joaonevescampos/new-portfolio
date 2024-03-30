@@ -12,6 +12,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Button } from "../ui/button";
 
 export function Projects() {
 
@@ -43,6 +44,18 @@ export function Projects() {
                                         />
                                         <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl mt-4">{item.name}</h2>
                                         <p className="text-center my-4">{item.description}</p>
+                                        <Button
+                                            variant="default"
+                                            className="mb-4"
+                                        >
+                                            Ver projeto
+                                        </Button>
+                                        <Button
+                                            variant="outline"
+                                            className="mb-4"
+                                        >
+                                            Ver código
+                                        </Button>
                             </CardContent>
                         </Card>
                         </div>
