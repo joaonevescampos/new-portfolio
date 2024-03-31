@@ -24,7 +24,7 @@ export function Projects() {
     ]
 
   return (
-      <div>
+      <div className="mt-4">
         <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Alguns dos meus</p>
             <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Projetos</h2>
@@ -34,7 +34,7 @@ export function Projects() {
                     {projects.map((item) => (
                     <CarouselItem key={projects.indexOf(item)}>
                         <div className="p-1">
-                        <Card>
+                        <Card className="bg-transparent">
                             <CardContent className="flex flex-col aspect-square items-center justify-center p-6">
                                 <Image
                                     src={item.src}

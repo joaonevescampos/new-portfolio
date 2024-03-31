@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../../assets/logo-portfolio.png";
-import { FaBars, FaMoon, FaSun } from "react-icons/fa";
-import { GoSun } from "react-icons/go";
+import { ModeToggle } from "../ModeToggle";
+import { Menu } from "../Menu";
 // FaWhatsapp, FaLinkedinIn, FaGithub, FaFile
 //front: FaCode, design FaDesktop, back: FaCube
 //Tecnologias: /di
@@ -9,7 +9,7 @@ import { GoSun } from "react-icons/go";
 //DiGit, FaGithub, FaFigma, SiTailwindcss, SiCanva, SiGimp
 export default function Header() {
     return (
-        <header className="flex justify-between items-center">
+        <header className="flex justify-between items-center m-4">
             <div>
                 <Image
                     src={logo}
@@ -18,9 +18,9 @@ export default function Header() {
                     height={30}
                 />     
             </div>
-            <div className="flex gap-6">
-                <GoSun className="text-xl"></GoSun>
-                <FaBars className="text-xl opacity-50"></FaBars>
+            <div className="flex items-center gap-6">
+                <ModeToggle />
+                <Menu />
             </div>
         </header>
     );

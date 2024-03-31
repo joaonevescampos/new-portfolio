@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 //DiGit, FaGithub, FaFigma, SiTailwindcss, SiCanva, SiGimp
 export default function Introduction() {
     return (
-        <div className="flex flex-col items-center justify-center m-4">
+        <div className="flex flex-col items-center justify-center">
             <div className="bg-purple-color01 opacity-25 w-52 h-52 rounded-full absolute top-14 -z-10"></div>
                 <Image
                     src={photoProfile}

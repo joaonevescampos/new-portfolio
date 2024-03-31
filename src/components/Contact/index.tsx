@@ -44,7 +44,7 @@ export function Contact() {
       }
 
     return (
-    <>
+    <div className="mb-8">
         <div className="m-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Entre em</p>
             <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Contato</h2>
@@ -86,10 +86,10 @@ export function Contact() {
           render={({ field }) => (
             <FormItem>
                       
-                      <FormLabel>Assunto</FormLabel>
+                      <FormLabel>Mensagem</FormLabel>
                       <FormControl>
                       <Textarea
-                          placeholder="Escreva o assunto do email" {...field}
+                          placeholder="Escreva a mensagem do email" {...field}
                           className="h-44"
                       />
                       </FormControl>
@@ -105,7 +105,7 @@ export function Contact() {
                     </div>
       </form>
     </Form>
-    </>
+    </div>
    
   )
 }
