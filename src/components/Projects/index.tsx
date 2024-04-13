@@ -46,34 +46,36 @@ export function Projects() {
             <p className="text-xs">Alguns dos meus</p>
               <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Projetos</h2>
         </div>
-          <Carousel className="w-full max-w-xs">
-                <CarouselContent>
+          <Carousel className="max-w-xs md:max-w-none ">
+                <CarouselContent className="md:w-[600px]">
                     {projects.map((item, index) => (
                     <CarouselItem key={index}>
-                        <div className="p-1">
-                        <Card className="bg-transparent">
+                        <div className="p-1 ">
+                        <Card className="bg-transparent ">
                             <CardContent className="flex flex-col aspect-square items-center justify-center p-6 text-sm">
                                 <Image
                                     src={item.src}
                                     alt={item.name}
-                                    className="w-96"
+                                    className="w-96 md:w-[500px]"
 
                                         />
                                         <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl mt-4">{item.name}</h2>
                                         <p className="text-center my-4">{item.description}</p>
                                         
-                                        <Button
-                                            variant="default"
-                                            className="mb-4"
-                                        >
-                                            Ver projeto
-                                        </Button>
-                                        <Button
-                                            variant="outline"
-                                            className="mb-4"
-                                        >
-                                            Ver código
-                                        </Button>
+                                        <div className="flex flex-col md:flex-row md:gap-4">
+                                            <Button
+                                                variant="default"
+                                                className="mb-4"
+                                            >
+                                                Ver projeto
+                                            </Button>
+                                            <Button
+                                                variant="outline"
+                                                className="mb-4"
+                                            >
+                                                Ver código
+                                            </Button>
+                                        </div>
                             </CardContent>
                         </Card>
                         </div>

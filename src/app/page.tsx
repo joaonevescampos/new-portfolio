@@ -11,8 +11,7 @@ export default function Home() {
     <>
       <Header/>
       <main className="flex flex-col items-center justify-center">
-        <div className="absolute top-[1380px] rounded-tl-[80px] rounded-br-[80px] rounded -z-10 w-screen h-[700px] bg-purple-color01 bg-opacity-20 ">
-
+        <div className="absolute top-[1450px] md:top-[1150px] rounded-tl-[80px] rounded-br-[80px] rounded -z-10 w-screen h-[700px] bg-purple-color01 bg-opacity-20 ">
         </div>
         <Introduction />
         <Skills />

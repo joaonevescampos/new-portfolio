@@ -1,9 +1,5 @@
 import * as React from "react";
-import Image from "next/image";
-import cucaflow from "../../assets/project-cucaflow.png";
-import newboard from "../../assets/project-newboard.png";
-import mandala from "../../assets/project-mandala.png";
-import hotel from "../../assets/hotel-campos.png";
+import {FaQuoteLeft, FaQuoteRight} from "react-icons/fa"
 import { Card, CardContent } from "@/components/ui/card";
 import {
     Carousel,
@@ -12,7 +8,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Button } from "../ui/button";
 
 export function Recomendations() {
 
@@ -24,6 +19,15 @@ export function Recomendations() {
         {
             person: "Helena", review: "Adorei! Acho que você pegou bem o espírito da coisa. A ideia de portal e conexões. Ficou bem clean, elegante e profissional."
         },
+        {
+            person: "Jamile", review: "Está sendo maravilhoso trabalhar contigo. Tô muito feliz pelo teu aprendizado super rápido no frontend. E tá ficando incrível o projeto."
+        },
+        {
+            person: "Tayanna", review: "Está sendo muito bom trabalhar com você! O projeto tá ficando incrível."
+        },
+        {
+            person: "Patrick", review: "Eu fiquei muito aflito quando perdemos o nosso front lá atrás. Mas você foi sensacional!"
+        },
     ]
 
   return (
@@ -32,16 +36,18 @@ export function Recomendations() {
             <p className="text-xs">Melhores clientes e suas</p>
             <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Recomendações</h2>
         </div>
-          <Carousel className="w-full max-w-xs">
+          <Carousel className="w-full max-w-xs md:max-w-[600px]">
                 <CarouselContent>
                     {recomendations.map((item) => (
                     <CarouselItem key={recomendations.indexOf(item)}>
                         <div className="p-4">
                         <Card>
-                            <CardContent className="flex flex-col border aspect-square items-center justify-center p-6">
-                                
-                                        <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl mt-4">{item.person}</h2>
-                                        <p className="text-left my-4">{item.review}</p>
+                                    <CardContent className=" border p-6">
+                                        
+                                        <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight md:text-2xl m-4">{item.person}</h2>
+                                        <FaQuoteLeft className="m-4 opacity-40 text-2xl"/>
+                                        <p className="text-left m-4">{item.review}</p>
+                                        <FaQuoteRight className="opacity-40 text-2xl ml-[200px] md:ml-[480px]"/>
                             </CardContent>
                         </Card>
                         </div>

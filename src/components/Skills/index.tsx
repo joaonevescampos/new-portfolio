@@ -4,9 +4,9 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
-import { useState } from "react"
 import { DiCss3, DiGit, DiGithub, DiHtml5, DiJsBadge, DiReact, DiNodejsSmall, DiPostgresql } from "react-icons/di"
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si"
+
   
 export function Skills() {
 
@@ -17,7 +17,7 @@ export function Skills() {
                 <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Habilidades</h2>
             </div>
 
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="md:flex md:justify-center w-full">
         <AccordionItem value="frontend">
           <AccordionTrigger>Front-end</AccordionTrigger>
             <AccordionContent>
@@ -137,7 +137,9 @@ export function Skills() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="design">
-          <AccordionTrigger>Design</AccordionTrigger>
+            <AccordionTrigger>
+                Design      
+            </AccordionTrigger>
           <AccordionContent>
           <p className="mb-4 w-full">
                 Como um artista nato com criatividade de sobra, sempre me interessei por arte e design. Adquiri noções básicas de design e domínio principalmente do Figma e Canva.

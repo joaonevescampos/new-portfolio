@@ -8,7 +8,7 @@ export default function Footer() {
                 <FaLinkedinIn/>
                 <FaGithub />
             </div>
-            <p className="w-72 text-center text-xs">
+            <p className="w-72 md:w-[400px] text-center text-xs">
                 Copyright &copy 2024 - Created by João Campos - All rights reserved
             </p>
             
