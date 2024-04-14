@@ -42,7 +42,7 @@ export function Recomendations() {
                     <CarouselItem key={recomendations.indexOf(item)}>
                         <div className="p-4">
                         <Card>
-                                    <CardContent className=" border p-6">
+                                    <CardContent className=" border rounded border-gray-300 p-6">
                                         
                                         <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight md:text-2xl m-4">{item.person}</h2>
                                         <FaQuoteLeft className="m-4 opacity-40 text-2xl"/>
