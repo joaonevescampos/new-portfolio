@@ -4,7 +4,7 @@ import { FaBars, FaMoon, FaSun, FaWhatsapp, FaLinkedinIn, FaGithub, FaFile } fro
 import { GoSun } from "react-icons/go";
 import { Button } from "../ui/button";
 
-export default function Introduction() {
+export function Introduction() {
     return (
         <div className="flex flex-col items-center justify-center md:flex-row-reverse md:gap-40 lg:gap-64 md:items-start md:justify-start p-8">
             <div>

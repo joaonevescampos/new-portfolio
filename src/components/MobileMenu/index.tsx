@@ -1,5 +1,4 @@
-
-  
+// "use client"
 import { Button } from "@/components/ui/button"
 import {
 DropdownMenu,
@@ -16,7 +15,7 @@ DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { FaBars } from "react-icons/fa"
 
-export function Menu() {
+export function MobileMenu() {
 return (
     <DropdownMenu>
     <DropdownMenuTrigger asChild>  
