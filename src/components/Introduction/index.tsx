@@ -1,8 +1,9 @@
+"use client";
 import Image from "next/image";
 import photoProfile from "../../assets/photo-profile.png";
-import { FaBars, FaMoon, FaSun, FaWhatsapp, FaLinkedinIn, FaGithub, FaFile } from "react-icons/fa";
-import { GoSun } from "react-icons/go";
+import { FaWhatsapp, FaLinkedinIn, FaGithub, FaFile } from "react-icons/fa";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function Introduction() {
     return (
@@ -31,19 +32,22 @@ export function Introduction() {
                 <div className="flex flex-col text-sm w-52 gap-4 pl-4 my-4 border-l-4 border-purple-color01">
                     <div className="flex gap-2">
                         <FaWhatsapp className="text-2xl text-purple-color01" />
-                        <p className="font-bold text-purple-color01">What's App</p>
+                        <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portfolio%20e%20me%20interessei%20pelo%20seu%20trabalho!"
+                            className="font-bold text-purple-color01">
+                            What's App
+                        </a>
                     </div>
                     <div className="flex gap-2">
                         <FaGithub className="text-2xl text-purple-color01"  />
-                        <p className="font-bold text-purple-color01">Github</p>
+                        <a href="https://github.com/joaonevescampos" className="font-bold text-purple-color01">Github</a>
                     </div>
                     <div className="flex gap-2">
                         <FaLinkedinIn className="text-2xl text-purple-color01" />
-                        <p className="font-bold text-purple-color01">Linkedin</p>
+                        <a href="https://www.linkedin.com/in/joaonevescampos" className="font-bold text-purple-color01">Linkedin</a>
                     </div>
                     <div className="flex gap-2">
                         <FaFile className="text-2xl text-purple-color01" />
-                        <p className="font-bold text-purple-color01">Currículo</p>
+                        <Link href="/cv.pdf" className="font-bold text-purple-color01">Currículo</Link>
                     </div>
                 </div>
             </div>
