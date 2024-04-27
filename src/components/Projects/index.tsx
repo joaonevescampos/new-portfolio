@@ -29,7 +29,7 @@ export function Projects() {
         {
             src: cucaflow,
             name: "Cucaflow",
-            description: "Cucaflow é um software de produtividade, auxiliando na organização pessoal de artistas. Organizado pela Cubos Academy que através do HandsOn, reuniu uma equipe de seis desenvolvedores e seis designers e simulou um ambiente profissional. As tecnologias utilizadas no projeto foram Node, Typescript, Next, Tailwind, Shadcn Ui, Nest, Prisma e PostgreSQL. Atuando neste projeto como desenvolvedor frontend, fui responsável por criar as telas de cadastro, recuperação de senha e componente de lista de tarefas.",
+            description: "Cucaflow é um software de produtividade, auxiliando na organização de artistas. Organizado pela Cubos Academy que reuniu uma equipe de 6 desenvolvedores e 6 designers, simulando um ambiente profissional. As tecnologias utilizadas no projeto foram Node, Typescript, Next, Tailwind, Shadcn Ui, Nest, Prisma e PostgreSQL. Atei como desenvolvedor frontend, fui responsável por criar as telas de cadastro, recuperação de senha e componente de lista de tarefas.",
             code:"https://github.com/patrickcardoso-dev/cucaflow-app",
             deploy: "https://cucaflow.netlify.app/"
         },

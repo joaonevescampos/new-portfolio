@@ -13,6 +13,8 @@ import {
 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import ilustration from "../../assets/Big Shoes - Person Sitting with Plants.png";
+import Image from "next/image";
 
 export function Tecnologies() {
     const devIcons = [
@@ -37,19 +39,24 @@ export function Tecnologies() {
                 <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Tecnologias</h2>
             </div>
         </div>
-            <div className='grid lg:grid-cols-4 lg:gap-4 grid-cols-3 gap-5 m-8'>
+            <div className='grid md:grid-cols-4 md:gap-4 grid-cols-3 gap-5 m-8'>
             {
                 devIcons.map((icon) => {
                     return (
                         <div key={icon.name} className='flex items-center justify-center flex-col border-2 p-2'>
                             {
-                                React.createElement(icon.tagIcon, { className: 'col-span-1 text-purple-color01 bg-white w-12 h-12 rounded' })
+                                React.createElement(icon.tagIcon, { className: 'col-span-1 text-purple-color01 bg-transparent w-12 h-12 rounded' })
                             }
                             <p className='text-xs text-center font-semibold'>{ icon.name }</p>
                         </div>
                 )
             })}
             </div>
+            <Image src={ilustration}
+                alt="ilustração"
+                width={350}
+                className='m-auto'
+            />
         </div> 
     )
 }

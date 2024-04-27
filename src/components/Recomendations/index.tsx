@@ -8,6 +8,8 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
+import ilustration from "../../assets/Big Shoes - Discussion.png";
 
 export function Recomendations() {
 
@@ -32,6 +34,11 @@ export function Recomendations() {
 
   return (
       <div>
+          <Image src={ilustration}
+                alt="ilustração"
+                width={350}
+                className='m-auto'
+            />
         <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Melhores clientes e suas</p>
             <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Recomendações</h2>
@@ -56,7 +63,7 @@ export function Recomendations() {
                 </CarouselContent>
                 <CarouselPrevious />
             <CarouselNext />
-        </Carousel>
+          </Carousel>
     </div>
   )
 }
