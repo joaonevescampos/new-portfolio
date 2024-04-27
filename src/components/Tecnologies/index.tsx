@@ -41,7 +41,7 @@ export function Tecnologies() {
             {
                 devIcons.map((icon) => {
                     return (
-                        <div className='flex items-center justify-center flex-col border-2 p-2'>
+                        <div key={icon.name} className='flex items-center justify-center flex-col border-2 p-2'>
                             {
                                 React.createElement(icon.tagIcon, { className: 'col-span-1 text-purple-color01 bg-white w-12 h-12 rounded' })
                             }
