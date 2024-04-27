@@ -33,8 +33,8 @@ export function Introduction() {
                     <div className="flex gap-2">
                         <FaWhatsapp className="text-2xl text-purple-color01" />
                         <a href="https://api.whatsapp.com/send?phone=5561982481039&text=Ol%C3%A1,%20Jo%C3%A3o!%20Vi%20seu%20portfolio%20e%20me%20interessei%20pelo%20seu%20trabalho!"
-                            className="font-bold text-purple-color01">
-                            What's App
+                        className="font-bold text-purple-color01">
+                            Whats App
                         </a>
                     </div>
                     <div className="flex gap-2">
