@@ -14,7 +14,7 @@ export function Skills() {
         <div className="w-80">
             <div className="m-4 flex flex-col justify-center items-center">
                 <p className="text-xs">Algumas das minhas</p>
-                <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Habilidades</h2>
+                <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Habilidades</h2>
             </div>
 
         <Accordion type="single" collapsible className="md:flex md:justify-center w-full">

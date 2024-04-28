@@ -33,23 +33,23 @@ export function Recomendations() {
     ]
 
   return (
-      <div>
+      <div className="flex flex-col items-center justify-center">
           <Image src={ilustration}
                 alt="ilustração"
                 width={350}
                 className='m-auto'
             />
-        <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
+        <div className="mt-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Melhores clientes e suas</p>
-            <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Recomendações</h2>
+            <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Recomendações</h2>
         </div>
-          <Carousel className="w-full max-w-xs md:max-w-[600px]">
+          <Carousel className="w-full max-w-72 md:max-w-[600px]">
                 <CarouselContent>
                     {recomendations.map((item) => (
                     <CarouselItem key={recomendations.indexOf(item)}>
                         <div className="p-4">
                         <Card>
-                                    <CardContent className=" border rounded border-gray-300 p-6">
+                                    <CardContent className=" border rounded border-gray-300 p-2">
                                         
                                         <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight md:text-2xl m-4">{item.person}</h2>
                                         <FaQuoteLeft className="m-4 opacity-40 text-2xl"/>

@@ -36,7 +36,7 @@ export function Tecnologies() {
             <div>
             <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
                 <p className="text-xs">Domino as seguintes</p>
-                <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01">Tecnologias</h2>
+                <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Tecnologias</h2>
             </div>
         </div>
             <div className='grid md:grid-cols-4 md:gap-4 grid-cols-3 gap-5 m-8'>
@@ -45,7 +45,7 @@ export function Tecnologies() {
                     return (
                         <div key={icon.name} className='flex items-center justify-center flex-col border-2 p-2'>
                             {
-                                React.createElement(icon.tagIcon, { className: 'col-span-1 text-purple-color01 bg-transparent w-12 h-12 rounded' })
+                                React.createElement(icon.tagIcon, { className: 'col-span-1 text-purple-color01 dark:text-purple-color04 bg-transparent w-12 h-12 rounded' })
                             }
                             <p className='text-xs text-center font-semibold'>{ icon.name }</p>
                         </div>

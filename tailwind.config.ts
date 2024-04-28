@@ -22,7 +22,8 @@ const config = {
         purple: {
           color01: "#4336D7",
           color02: "#0B0271",
-
+          color03: "#A782EB",
+          color04: "#6235FF"
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
