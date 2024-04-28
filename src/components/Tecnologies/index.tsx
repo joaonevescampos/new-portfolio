@@ -13,8 +13,9 @@ import {
 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import ilustration from "../../assets/Big Shoes - Person Sitting with Plants.png";
-import Image from "next/image";
+import ilustration from "../../assets/animation1.json";
+// import Image from "next/image";
+import Lottie from "lottie-react";
 
 export function Tecnologies() {
     const devIcons = [
@@ -52,10 +53,9 @@ export function Tecnologies() {
                 )
             })}
             </div>
-            <Image src={ilustration}
+            <Lottie animationData={ilustration}
                 alt="ilustração"
-                width={350}
-                className='m-auto'
+                className='m-auto w-64'
             />
         </div> 
     )

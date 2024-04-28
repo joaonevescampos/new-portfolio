@@ -8,8 +8,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import ilustration from "../../assets/Big Shoes - Discussion.png";
+// import Image from "next/image";
+import ilustration from "../../assets/animation2.json";
+import Lottie from "lottie-react";
 
 export function Recomendations() {
 
@@ -34,10 +35,9 @@ export function Recomendations() {
 
   return (
       <div className="flex flex-col items-center justify-center">
-          <Image src={ilustration}
+          <Lottie animationData={ilustration}
                 alt="ilustração"
-                width={350}
-                className='m-auto'
+                className='m-auto w-52'
             />
         <div className="mt-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Melhores clientes e suas</p>
