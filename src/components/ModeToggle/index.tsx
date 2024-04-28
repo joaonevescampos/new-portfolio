@@ -1,16 +1,18 @@
 "use client"
 
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
 
-    const { setTheme } = useTheme()
+    const { theme, setTheme } = useTheme()
     const [darkMode, setDarkMode] = React.useState(false)
-
+    
+  if (theme === "system" || !theme) {
+    setTheme("light")
+  }
     function ChangeToDarkMode() {
         setTheme("dark")
         setDarkMode(true)
