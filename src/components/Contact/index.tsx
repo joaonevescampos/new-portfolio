@@ -47,7 +47,7 @@ export function Contact() {
     <div className="mb-8">
         <div className="m-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Entre em</p>
-            <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Contato</h2>
+            <h2 id="contact" className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Contato</h2>
             </div>
             <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-64 md:w-[600px]">

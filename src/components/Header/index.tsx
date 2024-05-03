@@ -22,30 +22,21 @@ export function Header() {
     //     }
     // }, []);
     return (
-        <header className="flex justify-between items-center m-4">
+        <header className="fixed w-full h-20 bg-white dark:bg-purple-color01">
+            <div className="flex justify-between items-center m-4">
             <div>
-                <Image
+                {/* <Image
                     src={logo}
                     alt="logo do portfólio"
                     width={30}
                     height={30}
-                />     
+                />      */}
             </div>
-            <div className="flex items-center gap-6">
-                {/* {windowSize <= 768 ? (
-                    <>
-                        <ModeToggle />
-                        <MobileMenu />
-                    </>
-                ) : (
-                    <>
-                        <DesktopMenu />
-                        <ModeToggle />
-                    </>
-                )} */}
+            <div className="flex items-center justify-center gap-6">
                 <ModeToggle />
-                <MobileMenu />   
+                <MobileMenu />
             </div>
+        </div>
         </header>
     );
 };

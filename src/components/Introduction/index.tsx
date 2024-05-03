@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Introduction() {
     return (
-        <div className="flex flex-col items-center justify-center md:flex-row-reverse md:gap-40 lg:gap-64 md:items-start md:justify-start p-8">
+        <div id="home"  className="flex flex-col items-center justify-center md:flex-row-reverse md:gap-40 lg:gap-64 md:items-start md:justify-start mt-24 mb-8">
             <div>
                     <Image
                         src={photoProfile}
@@ -47,7 +47,7 @@ export function Introduction() {
                     </div>
                     <div className="flex gap-2">
                         <FaFile className="text-2xl text-purple-color01 dark:text-violet-400" />
-                        <Link href="/cv.pdf" className="font-bold text-purple-color01 dark:text-purple-color03">Currículo</Link>
+                        <Link href="/cv.pdf" target="blank" className="font-bold text-purple-color01 dark:text-purple-color03">Currículo</Link>
                     </div>
                 </div>
             </div>

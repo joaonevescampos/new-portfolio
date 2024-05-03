@@ -25,7 +25,7 @@ export function Projects() {
             previous: "New Board é um software que gerencia tarefas, similar ao Trello.",
             description: "New Board é um software que gerencia tarefas, similar ao Trello. Desenvolvido por uma equipe de cinco desenvolvedores liderados por mim, este projeto utiliza as tecnologias: React, CSS, Node e PostgreSQL. Atuei como desenvolvedor frontend e designer, criando as telas de Home, Boards, Account entre outras.",
             code:"https://github.com/joaonevescampos/new-board",
-            deploy: "#"
+            deploy: "https://new-board-project.vercel.app/"
         },
         {
             src: cucaflow,
@@ -57,7 +57,7 @@ export function Projects() {
       <div className="mt-4">
         <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
             <p className="text-xs">Alguns dos meus</p>
-              <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Projetos</h2>
+              <h2 id="projects" className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Projetos</h2>
         </div>
           <Carousel className="max-w-xs md:max-w-none ">
                 <CarouselContent className="md:w-[600px]">

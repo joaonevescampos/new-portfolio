@@ -13,9 +13,8 @@ import {
 } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import ilustration from "../../assets/animation1.json";
-// import Image from "next/image";
-import Lottie from "lottie-react";
+import ilustration from "../../assets/Big Shoes - Discussion.png";
+import Image from "next/image";
 
 export function Tecnologies() {
     const devIcons = [
@@ -37,7 +36,7 @@ export function Tecnologies() {
             <div>
             <div className="mt-4 ml-4 flex flex-col justify-center items-center ">
                 <p className="text-xs">Domino as seguintes</p>
-                <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Tecnologias</h2>
+                <h2 id='tecnologies' className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Tecnologias</h2>
             </div>
         </div>
             <div className='grid md:grid-cols-4 md:gap-4 grid-cols-3 gap-5 m-8'>
@@ -53,9 +52,11 @@ export function Tecnologies() {
                 )
             })}
             </div>
-            <Lottie animationData={ilustration}
+            <Image
+                src={ilustration}
                 alt="ilustração"
-                className='m-auto w-64'
+                width={200}
+                className='m-auto w-36'
             />
         </div> 
     )
