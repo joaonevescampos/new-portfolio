@@ -27,7 +27,9 @@ export function Introduction() {
                     <p className="scroll-m-20 text-base text-justify tracking-tight md:w-[410px]">
                         Bem-vindo(a), meu nome é João, um engenheiro químico, que está embarcando em uma empolgante transição para a profissão de desenvolvedor front-end com noções de design e backend. Com uma sólida formação em engenharia química, descobri minha verdadeira paixão pela tecnologia web e decidi mergulhar de cabeça nesse novo desafio.
                     </p>
-                    <Button variant="default">Projetos</Button>
+                    <Button variant="default">
+                        <a href="#projects">Projetos</a>
+                    </Button>
                 </div>
                 <div className="flex flex-col text-sm w-52 gap-4 pl-4 mt-8 border-l-4 border-purple-color01 dark:border-purple-700">
                     <div className="flex gap-2">

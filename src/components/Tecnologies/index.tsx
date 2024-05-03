@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    DiJavascript1,
+    DiJavascript,
     DiHtml5,
     DiCss3,
     DiReact,
@@ -18,7 +18,7 @@ import Image from "next/image";
 
 export function Tecnologies() {
     const devIcons = [
-       { tagIcon: DiJavascript1, name: "JavaScript"},
+       { tagIcon: DiJavascript, name: "JavaScript"},
        { tagIcon: DiHtml5, name: "HTML" },
        { tagIcon: DiCss3, name: "CSS"},
        { tagIcon: DiReact, name: "React" },

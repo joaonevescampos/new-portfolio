@@ -22,7 +22,7 @@ export function Header() {
     //     }
     // }, []);
     return (
-        <header className="fixed w-full h-20 bg-white dark:bg-purple-color01">
+        <header className="absolute top-0 left-0 w-full h-20">
             <div className="flex justify-between items-center m-4">
             <div>
                 {/* <Image
