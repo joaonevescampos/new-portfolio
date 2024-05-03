@@ -91,7 +91,7 @@ export function Projects() {
                                         <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl mt-4">{item.name}</h2>
                                         <div className="flex items-center justify-center w-96">
                                         {item.techs.map((tech) =>
-                                            <div>
+                                            <div key={tech.toString()}>
                                                 {
                                                     React.createElement(tech, { className: ' text-purple-color01 dark:text-purple-color03 bg-transparent w-12 h-12 rounded' })
                                                 }
