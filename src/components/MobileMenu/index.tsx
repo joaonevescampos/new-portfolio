@@ -14,24 +14,24 @@ export function MobileMenu() {
                         className="absolute right-5 top-5 text-white cursor-pointer z-50"
                         onClick={() => setOpenMenu(false)}>
                     </FaTimes>
-                    <ul className="fixed right-0 top-0 w-72 h-full p-4 bg-purple-color01 ease-in-out duration-100">
+                    <ul className="fixed z-40 right-0 top-0 w-72 h-full p-4 bg-purple-color01 ease-in-out duration-100">
                         <li className="text-sm p-4 text-white font-semibold">
-                           <a href="#home">Home</a>
+                           <a href="#home" onClick={() => setOpenMenu(false)}>Home</a>
                         </li>
                         <li className="text-sm p-4 text-white font-semibold">
-                            <a href="#tecnologies">Tecnologias</a>
+                            <a href="#tecnologies" onClick={() => setOpenMenu(false)}>Tecnologias</a>
                         </li>
                         <li className="text-sm p-4 text-white font-semibold">
-                            <a href="#skills">Habilidades</a>
+                            <a href="#skills" onClick={() => setOpenMenu(false)}>Habilidades</a>
                         </li>
                         <li className="text-sm p-4 text-white font-semibold">
-                            <a href="#projects">Projetos</a>
+                            <a href="#projects" onClick={() => setOpenMenu(false)}>Projetos</a>
                         </li>
                         <li className="text-sm p-4 text-white font-semibold">
-                            <a href="#recomendations">Recomendações</a>
+                            <a href="#recomendations" onClick={() => setOpenMenu(false)}>Recomendações</a>
                         </li>
                         <li className="text-sm p-4 text-white font-semibold">
-                            <a href="#contact">Contato</a>
+                            <a href="#contact" onClick={() => setOpenMenu(false)}>Contato</a>
                         </li>
                     </ul>                   
                 </div>
