@@ -55,8 +55,7 @@ export function Tecnologies() {
             <Image
                 src={ilustration}
                 alt="ilustração"
-                width={200}
-                className='m-auto w-36'
+                className='m-auto w-52'
             />
         </div> 
     )

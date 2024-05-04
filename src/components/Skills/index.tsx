@@ -101,7 +101,7 @@ export function Skills() {
         </AccordionTrigger>
           <AccordionContent>
             <p className="mb-4 w-full">
-                Apesar de focar mais em aprimorar minhas habilidades como desenvolvedor frontend, também possuo domínio básico de desenvolvimento backend. Principais tecnologias que domínio são Node JS e PostgreSQL.
+                Apesar de focar mais em aprimorar minhas habilidades como desenvolvedor frontend, também possuo domínio básico de desenvolvimento backend. Principais tecnologias que utilizo são Node JS e PostgreSQL.
             </p>     
             <div className="flex justify-between items-center gap-4 rounded p-2 mb-2 text-white bg-purple-color01 w-64">
                 <div className="flex items-center gap-2">

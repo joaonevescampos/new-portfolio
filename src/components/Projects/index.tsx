@@ -4,6 +4,7 @@ import Image from "next/image";
 import cucaflow from "../../assets/project-cucaflow.png";
 import newboard from "../../assets/project-newboard.png";
 import mandala from "../../assets/project-mandala.png";
+import mySpotify from "../../assets/project-myspotify.png";
 import hotel from "../../assets/hotel-campos.png";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -33,38 +34,52 @@ export function Projects() {
         
         {
             src: newboard,
+            type: "Full Stack",
             name: "New Board",
             techs: [DiHtml5, DiCss3, DiJavascript, DiReact, DiPostgresql, DiNodejsSmall],
             previous: "New Board é um software que gerencia tarefas, similar ao Trello.",
-            description: "New Board é um software que gerencia tarefas, similar ao Trello. Desenvolvido por uma equipe de cinco desenvolvedores liderados por mim, este projeto utiliza as tecnologias: React, CSS, Node e PostgreSQL. Atuei como desenvolvedor frontend e designer, criando as telas de Home, Boards, Account entre outras.",
-            code:"https://github.com/joaonevescampos/new-board",
+            description: "New Board é um software que gerencia tarefas, similar ao Trello. Desenvolvido por uma equipe de cinco desenvolvedores liderados por mim, este projeto utiliza as tecnologias: React, CSS, Node e PostgreSQL. Atuei como desenvolvedor frontend e designer, fazendo todo o design do projeto no Figma e criando as telas de Home, Boards, Account entre outras.",
+            repo:"https://github.com/joaonevescampos/new-board",
             deploy: "https://new-board-project.vercel.app/"
         },
         {
+            src: mySpotify,
+            type: "Frontend",
+            techs: [DiHtml5, DiCss3, DiReact],
+            name: "My Spotify",
+            previous: "Aplicativo de música inspirado no Spotify.",
+            description: "Um site de música inspirado no Spotify. Este site é totalmente responsivo, desenvolvido em React com design completamente idealizado e criado por mim.",
+            repo:"https://github.com/joaonevescampos/myspotify",
+            deploy: "https://myspotify-eta.vercel.app/"
+        },
+        {
             src: cucaflow,
+            type: "Full Stack",
             name: "Cucaflow",
             techs: [BiLogoTypescript, TbBrandNextjs, SiTailwindcss, SiPrisma, DiPostgresql, DiNodejsSmall],
             previous: "Cucaflow é um software de produtividade, auxiliando na organização de artistas.",
-            description: "Cucaflow é um software de produtividade, auxiliando na organização de artistas. Organizado pela Cubos Academy que reuniu uma equipe de 6 desenvolvedores e 6 designers, simulando um ambiente profissional. As tecnologias utilizadas no projeto foram Node, Typescript, Next, Tailwind, Shadcn Ui, Nest, Prisma e PostgreSQL. Atei como desenvolvedor frontend, fui responsável por criar as telas de cadastro, recuperação de senha e componente de lista de tarefas.",
-            code:"https://github.com/patrickcardoso-dev/cucaflow-app",
+            description: "Cucaflow é um software de produtividade, auxiliando na organização de artistas. Organizado pela Cubos Academy que reuniu uma equipe de 6 desenvolvedores e 6 designers, simulando um ambiente profissional. As tecnologias utilizadas no projeto foram Node, Typescript, Next, Tailwind, Shadcn Ui, Nest, Prisma e PostgreSQL. Atuei como desenvolvedor frontend, fui responsável por criar as telas de cadastro, recuperação de senha e componente de lista de tarefas.",
+            repo:"https://github.com/patrickcardoso-dev/cucaflow-app",
             deploy: "https://cucaflow.netlify.app/"
         },
         {
             src: mandala,
+            type: "Frontend",
             techs: [DiHtml5, DiCss3, DiJavascript],
             name: "Mandalas Digitais",
-            previous: "Este foi o primeiro trabalho freelancer que fiz para um amigo arquiteto.",
-            description: "Este foi o primeiro trabalho freelancer que fiz para um amigo arquiteto com apenas 3 meses de estudos como desenvolvedor frontend. Fiz o site dele com tecnologias básicas como HTML, CSS e JavaScript. O site tem como objetivo divulgar e vender mandalas digitais.",
-            code:"https://github.com/joaonevescampos/site-mandala",
+            previous: "Site feito como portfólio de um arquiteto para vendas de Madalas Digitais.",
+            description: "Site feito como portfólio de um arquiteto para vendas de Madalas Digitais. Com apenas 3 meses de estudos como desenvolvedor frontend, fiz o site com tecnologias básicas como HTML, CSS e JavaScript. O site tem como objetivo divulgar e vender mandalas digitais.",
+            repo:"https://github.com/joaonevescampos/site-mandala",
             deploy: "https://joaonevescampos.github.io/site-mandala/"
         },
         {
             src: hotel,
+            type: "Frontend",
             techs: [DiHtml5, DiCss3, DiJavascript, DiBootstrap],
             name: "Hotel Campos",
-            previous: "Hotel Campos é um projeto frontend onde tive meu primeiro contato com o Bootstrap.",
-            description: "Hotel Campos é um projeto frontend onde tive meu primeiro contato com o Bootstrap. Usei bastante conhecimentos como Flexbox e Grid layout.",
-            code:"https://github.com/joaonevescampos/hotel-campos",
+            previous: "Hotel Campos é um site de reserva de Hotéis.",
+            description: "Hotel Campos é um site de reserva de Hotéis. É um projeto frontend onde tive meu primeiro contato com o Bootstrap. Usei diversos conhecimentos como Flexbox e Grid layout.",
+            repo:"https://github.com/joaonevescampos/hotel-campos",
             deploy: "https://joaonevescampos.github.io/hotel-campos/"
         },
     ]
@@ -119,7 +134,7 @@ export function Projects() {
                                                 Ver projeto
                                             </Button>
                                             </a>
-                                            <a href={item.code}>
+                                            <a href={item.repo}>
                                             <Button
                                                 variant="outline"
                                                 className="mb-4"
