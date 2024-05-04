@@ -64,7 +64,7 @@ export function Recomendations() {
                         <div className="p-4">
                         <Card>
                                     <CardContent className=" border rounded border-gray-300 p-2">
-                                        <div className="flex justify-end w-52 md:w-[500px] text-gray-700 m-4">
+                                        <div className="flex justify-end w-52 md:w-[500px] text-gray-700 dark:text-gray-300 m-4">
                                             <FaStar />
                                             <FaStar />
                                             <FaStar />
