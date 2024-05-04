@@ -41,6 +41,8 @@ export function Contact() {
      
       function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values)
+        const mailToLink = `mailto:${values.email}?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(values.message)}`
+        window.location.href = mailToLink;
       }
 
     return (
