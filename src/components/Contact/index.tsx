@@ -18,10 +18,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "../ui/textarea"
 
 const formSchema = z.object({
-    email: z.string().min(2, {
-    message: "Campo obrigatório.",
-    }),
-    subject: z.string().min(2, {
+
+    subject: z.string().min(1, {
         message: "Campo obrigatório.",
     }),
     message: z.string().min(1, {
@@ -33,15 +31,13 @@ export function Contact() {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            email: "",
             subject: "",
             message: "",
         },
       })
      
       function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
-        const mailToLink = `mailto:${values.email}?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(values.message)}`
+        const mailToLink = `mailto:joaon.c.jv@gmail.com?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(values.message)}`
         window.location.href = mailToLink;
       }
 
@@ -52,21 +48,7 @@ export function Contact() {
             <h2 id="contact" className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Contato</h2>
             </div>
             <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-64 md:w-[600px]">
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>E-mail</FormLabel>
-              <FormControl>
-                <Input placeholder="escreva seu email" {...field} />
-              </FormControl>
-              <FormMessage />
-              </FormItem>
-          )}
-              />
-              
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-64 md:w-[600px]">            
               <FormField
           control={form.control}
           name="subject"
