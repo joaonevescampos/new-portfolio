@@ -100,10 +100,9 @@ export function Projects() {
                                 <Image
                                     src={item.src}
                                     alt={item.name}
-                                    className="w-96 md:w-[500px]"
-
-                                        />
-                                        <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl mt-4">{item.name}</h2>
+                                    className="w-96 md:w-full"
+                                />
+                                        <h2 className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl my-4">{item.name}</h2>
                                         <div className="flex items-center justify-center w-96">
                                         {item.techs.map((tech) =>
                                             <div key={tech.toString()}>

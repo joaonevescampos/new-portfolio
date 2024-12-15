@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Header/>
       <main className="flex flex-col items-center justify-center">
-        <div className="absolute top-[2050px] md:top-[1650px] rounded-tl-[80px] rounded-br-[80px] rounded -z-10 w-screen md:h-[800px] h-[900px] bg-purple-color01 bg-opacity-20 ">
+        <div className="absolute top-[930px] md:top-[650px] md:rounded-tl-[300px] md:rounded-br-[300px] rounded-tl-[100px] rounded-br-[100px] rounded -z-10 w-screen md:h-[1930px] h-[2000px] bg-purple-color01 bg-opacity-20 ">
         </div>
         <Introduction />
         <Tecnologies/>

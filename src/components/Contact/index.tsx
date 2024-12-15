@@ -48,7 +48,7 @@ export function Contact() {
             <h2 id="contact" className="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-2xl text-purple-color01 dark:text-purple-color03">Contato</h2>
             </div>
             <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-64 md:w-[600px]">            
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-screen px-8 space-y-4 md:max-w-[600px] lg:max-w-[800px]">            
               <FormField
           control={form.control}
           name="subject"
